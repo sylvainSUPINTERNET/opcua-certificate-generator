@@ -35,8 +35,8 @@ Go to build directory and :
  2) Create a directory tree with .exe file such as :
 
  |-- build
-     |-- config.cnf => config related to openSSL ( do not edit )
-     |-- extension.cnf => use in openSSL x509 certificate generation to add data such as SubjectAltName required by OPCUA
+     |-- config.cnf => config related to openSSL ( do not edit ) - you can find it in ./src
+     |-- extension.cnf => use in openSSL x509 certificate generation to add data such as SubjectAltName required by OPCUA - you can find it in ./src
  |-- opcua-certificate-utility.exe
 
  3) Run the executable
