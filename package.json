@@ -1,0 +1,35 @@
+{
+  "name": "opcua-certificate-utility",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "./build/main.js",
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "assets": "build/**/*cnf",
+    "targets": [ "node16-win-x64" ],
+    "outputPath": "build"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && @powershell copy ./src/config.cnf ./build",
+    "build-linux": "tsc && cp ./src/config.cnf ./build",
+    "dev": "tsc && @powershell copy ./src/config.cnf ./build && node ./build/main.js",
+    "dev-linux": "tsc && cp ./src/config.cnf ./build && node ./build/main.js",
+    "start": "tsc && @powershell copy ./src/config.cnf ./build && node ./build/main.js",
+    "start-linux": "tsc && cp ./src/config.cnf ./build && node ./build/main.js",
+    "gen-exec": "tsc && @powershell copy ./src/config.cnf ./build && pkg . --targets node16-win-x64 --output build/opcua-certificate-utility.exe",
+    "gen-linux": "tsc && cp ./src/config.cnf ./build && pkg . --targets node16-linux-arm64"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "async-openssl": "^1.0.3",
+    "commander": "^9.4.1",
+    "nexe": "^4.0.0-rc.1",
+    "node-opcua": "^2.81.0",
+    "openssl-nodejs": "^1.0.5",
+    "prompt": "^1.3.0"
+  }
+}
