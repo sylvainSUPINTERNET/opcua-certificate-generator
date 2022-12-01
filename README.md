@@ -97,7 +97,7 @@ In the .env file on the boxer vision, change the following variables :
 ```` bash 
 
 AUTH_MECHANISM="certificate" 
-APPLICATION_URI="" => should be the same as the one in the certificate, if you use zalv0003.inetpsa.com as ip, so must be : URN:zalv0003.inetpsa.com
+APPLICATION_URI="URN:CameraControl.inetpsa.com" => should be the same as the one in the certificate, if you use zalv0003.inetpsa.com as ip, so must be : URN:zalv0003.inetpsa.com
 CERTIFICATE_FILE="self-signed-public.pem"
 PRIVATE_KEY_FILE="self-signed-private.pem"
 
