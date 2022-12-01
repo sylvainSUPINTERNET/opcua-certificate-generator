@@ -98,8 +98,8 @@ In the .env file on the boxer vision, change the following variables :
 
 AUTH_MECHANISM="certificate" 
 APPLICATION_URI="" => should be the same as the one in the certificate, if you use zalv0003.inetpsa.com as ip, so must be : URN:zalv0003.inetpsa.com
-CERTIFICATE_FILE="<path_to_your_certificate>.der"
-PRIVATE_KEY_FILE="<path_to_your_private_key>.pem"
+CERTIFICATE_FILE="self-signed-public.pem"
+PRIVATE_KEY_FILE="self-signed-private.pem"
 
 ````
 
