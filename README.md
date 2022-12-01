@@ -1,5 +1,6 @@
 # Utility for OPCUA certificate
 
+You need OpenSSL installed.
 
 
 ## How to run it locally 
@@ -49,13 +50,47 @@ Go to build directory and :
 
 ````
 
+## How to generate / use with OPCUA server
 
-## How to validate with OPCUA server
+### Exemple data
+
+
+```` bash
+
+CN="CN" 
+
+OU="OY"
+
+O="UO" 
+
+L="LL"
+
+ST="ST" 
+
+C="CC" 
+
+E="E"
+
+ip="CameraControl.inetpsa.com" 
+
+```` 
 
 
 1) Once the certificate / private key has been generated :
 
-Copy the certificate .der and the private key .pem into the target boxer vision
+Copy the certificate .der ( or public.pem) and the private key .pem into the target boxer vision, and rename them as : 
+
+```` bash
+
+self-signed-public.pem ( public.pem )
+
+self-signed-private.pem ( default_pk.pem )
+
+# then upload them to /opt/cameracontrol/conf/opcua
+
+````
+
+
 
 In the .env file on the boxer vision, change the following variables : 
 
@@ -74,6 +109,8 @@ Please check kepware server in the trusted client list to accept it
 
 
 Restart the container after the client is trusted manually by kepware server, and you should be fine
+
+
 
 
 
