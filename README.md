@@ -48,7 +48,7 @@ Go to build directory and :
 
  4) Should have at the end, a certificate .der and the .pem private key generated. 
  
- **Please using .pem instead of .der ( public.pem not public.der, .der is not supported by OPCUA nodejs SDK )**
+ /!\ Please using .pem instead of .der ( public.pem not public.der, .der is not supported by OPCUA nodejs SDK ) /!\
 
 ````
 
