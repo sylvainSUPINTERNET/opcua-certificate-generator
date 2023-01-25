@@ -54,12 +54,12 @@ Go to build directory and :
 
 ## How to generate / use with OPCUA server
 
-### Exemple data
+### Exemple data ( you must enter in the prompt )
 
 
 ```` bash
 
-CN="CN" 
+CN="CameraControl.inetpsa.com" 
 
 OU="OY"
 
@@ -102,6 +102,14 @@ AUTH_MECHANISM="certificate"
 APPLICATION_URI="URN:CameraControl.inetpsa.com" # should be the same as the one in the certificate, if you use CameraControl.inetpsa.com as ip for exec
 CERTIFICATE_FILE="self-signed-public.pem"
 PRIVATE_KEY_FILE="self-signed-private.pem"
+
+````
+
+In v6 : 
+
+```` bash 
+
+#  CERTIFICATE_FILE and PRIVATE_KEY_FILE are not required, path is given with system.json configuration
 
 ````
 
