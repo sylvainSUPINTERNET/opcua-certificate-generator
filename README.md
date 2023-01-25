@@ -46,7 +46,9 @@ Go to build directory and :
    Note : IP should be such as zalv0003.inetpsa.com ( will fill in URI as URI:URN:zalv0003.inetpsa.com )
          
 
- 4) Should have at the end, a certificate .der and the .pem private key generated 
+ 4) Should have at the end, a certificate .der and the .pem private key generated. 
+ 
+ **Please using .pem instead of .der ( public.pem not public.der, .der is not supported by OPCUA nodejs SDK )**
 
 ````
 
