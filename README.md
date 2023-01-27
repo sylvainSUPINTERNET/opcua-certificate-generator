@@ -14,6 +14,7 @@ npm run dev
 ````
 
 
+
 ## How to build executable ( using pkg npm package )
 
 ```` bash 
